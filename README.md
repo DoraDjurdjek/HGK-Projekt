@@ -3,9 +3,9 @@
 
 ## Projektni tim
 
-Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
-------------  | ------------------- | ----- | ---------------------
-Dora Đurđek | dordjurdj@foi.hr | 0036472773 | dordjurdj
+Ime i prezime | E-mail adresa (FOI) | Github korisničko ime
+------------  | ------------------- |---------------------
+Dora Đurđek | dora.djurdjek@gmail.com | DoraDjurdjek
 
 ## Opis domene
 Kreirat ću aplikaciju za HGK, naziva "Agent Tracker" u koju će se moći unositi podaci o agentima, posrednicima i poslovnim subjektima. Aplikaciju će moći koristiti zaposlenici i administrator.
