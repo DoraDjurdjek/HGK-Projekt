@@ -1,0 +1,24 @@
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\Statistika\bin\Debug\Statistika.dll
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\Statistika\bin\Debug\Statistika.pdb
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\Statistika\obj\Debug\Statistika.csprojAssemblyReference.cache
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\Statistika\obj\Debug\Statistika.csproj.CoreCompileInputs.cache
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\Statistika\obj\Debug\Statistika.dll
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\Statistika\obj\Debug\Statistika.pdb
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\Statistika\bin\Debug\Statistika.dll.config
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\Statistika\bin\Debug\EntityFramework.dll
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\Statistika\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\Statistika\bin\Debug\EntityFramework.xml
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\Statistika\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\Statistika\obj\Debug\Statistika.csproj.CopyComplete
+C:\Users\ssk\Desktop\Github HGK\HGK\Statistika\bin\Debug\Statistika.dll.config
+C:\Users\ssk\Desktop\Github HGK\HGK\Statistika\bin\Debug\Statistika.dll
+C:\Users\ssk\Desktop\Github HGK\HGK\Statistika\bin\Debug\Statistika.pdb
+C:\Users\ssk\Desktop\Github HGK\HGK\Statistika\bin\Debug\EntityFramework.dll
+C:\Users\ssk\Desktop\Github HGK\HGK\Statistika\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ssk\Desktop\Github HGK\HGK\Statistika\bin\Debug\EntityFramework.xml
+C:\Users\ssk\Desktop\Github HGK\HGK\Statistika\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ssk\Desktop\Github HGK\HGK\Statistika\obj\Debug\Statistika.csprojAssemblyReference.cache
+C:\Users\ssk\Desktop\Github HGK\HGK\Statistika\obj\Debug\Statistika.csproj.CoreCompileInputs.cache
+C:\Users\ssk\Desktop\Github HGK\HGK\Statistika\obj\Debug\Statistika.csproj.CopyComplete
+C:\Users\ssk\Desktop\Github HGK\HGK\Statistika\obj\Debug\Statistika.dll
+C:\Users\ssk\Desktop\Github HGK\HGK\Statistika\obj\Debug\Statistika.pdb

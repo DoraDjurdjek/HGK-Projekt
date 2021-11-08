@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="HGK.Login">
+    <Position X="5.25" Y="0.5" Width="3.5" />
+    <Members>
+      <Field Name="btnLogin" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="txtPassword" Hidden="true" />
+      <Field Name="txtUsername" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>EAgAAAAAACAAABAAAACAAAACAIQACAAAABAAAABAAAA=</HashCode>
+      <FileName>Login.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HGK.GlavniIzbornik">
+    <Position X="11.25" Y="0.5" Width="4.75" />
+    <Members>
+      <Field Name="btnDodajZaposlenika" Hidden="true" />
+      <Field Name="btnDodjeliAgentaSubjektu" Hidden="true" />
+      <Field Name="btnOdjava" Hidden="true" />
+      <Field Name="btnStatistika" Hidden="true" />
+      <Field Name="btnUnosNaselja" Hidden="true" />
+      <Field Name="btnUnosOsoba" Hidden="true" />
+      <Field Name="btnUnosStrucneSpreme" Hidden="true" />
+      <Field Name="btnUnosVrstePoslovnogSubjekta" Hidden="true" />
+      <Field Name="btnUnosZupanija" Hidden="true" />
+      <Field Name="btnZapisPoslovnogSubjekta" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="lblAdministratorskeOpcije" Hidden="true" />
+      <Field Name="pictureBox1" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="System.Windows.Forms.Form" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.25" Y="3.75" />
+        <Point X="5.25" Y="2.938" />
+        <Point X="11.25" Y="2.938" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAiBQAAQAAhOEJAAGIAAAQACAEAAAAQRAABE=</HashCode>
+      <FileName>GlavniIzbornik.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Windows.Forms.Form" Collapsed="true">
+    <Position X="4.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="HGK.FrmZapisPoslovnogSubjekta">
+    <Position X="0.5" Y="5.5" Width="4.25" />
+    <Members>
+      <Field Name="btnIzmijeni" Hidden="true" />
+      <Field Name="btnObrisi" Hidden="true" />
+      <Field Name="btnOdustani" Hidden="true" />
+      <Field Name="btnUnesi" Hidden="true" />
+      <Field Name="cmbNaselja" Hidden="true" />
+      <Field Name="cmbVrstaPoslovni" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dgvPoslovniSubjekt" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="dtpDatumUnosa" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="label4" Hidden="true" />
+      <Field Name="label5" Hidden="true" />
+      <Field Name="label6" Hidden="true" />
+      <Field Name="label7" Hidden="true" />
+      <Field Name="label8" Hidden="true" />
+      <Field Name="label9" Hidden="true" />
+      <Field Name="txtEmail" Hidden="true" />
+      <Field Name="txtMaticniBroj" Hidden="true" />
+      <Field Name="txtNaziv" Hidden="true" />
+      <Field Name="txtOib" Hidden="true" />
+      <Field Name="txtTelefon" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>kgAAAAAAQCYJgRBACBCIAAACAAAAAJAIAAAABACCAgE=</HashCode>
+      <FileName>FrmZapisPoslovnogSubjekta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HGK.FrmUnosZupanija">
+    <Position X="5.75" Y="5.5" Width="2.75" />
+    <Members>
+      <Field Name="btnDodaj" Hidden="true" />
+      <Field Name="btnizmjeni" Hidden="true" />
+      <Field Name="btnObrisi" Hidden="true" />
+      <Field Name="btnOdaberi" Hidden="true" />
+      <Field Name="btnOdustani" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dgvZuapnije" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="txtZupanije" Hidden="true" />
+      <Field Name="txtZupanijeIzmjena" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AggIAAQACKANIBAAAACAAAQCAABAAAAAAAACAAACAMA=</HashCode>
+      <FileName>FrmUnosZupanija.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HGK.FrmUnosZapisaOsoba">
+    <Position X="8.75" Y="5.5" Width="3.5" />
+    <Members>
+      <Field Name="btnDodaj" Hidden="true" />
+      <Field Name="btnIzmijeni" Hidden="true" />
+      <Field Name="btnOdustani" Hidden="true" />
+      <Field Name="btnPoloziIspit" Hidden="true" />
+      <Field Name="cmbNaselje" Hidden="true" />
+      <Field Name="cmbStrucnaSprema" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dgvUnosOsoba" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="dtpDatumRodenja" Hidden="true" />
+      <Field Name="dtpDatumUnosa" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label10" Hidden="true" />
+      <Field Name="label11" Hidden="true" />
+      <Field Name="label12" Hidden="true" />
+      <Field Name="label13" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="label4" Hidden="true" />
+      <Field Name="label5" Hidden="true" />
+      <Field Name="label6" Hidden="true" />
+      <Field Name="label7" Hidden="true" />
+      <Field Name="label8" Hidden="true" />
+      <Field Name="label9" Hidden="true" />
+      <Field Name="txtIEmail" Hidden="true" />
+      <Field Name="txtIme" Hidden="true" />
+      <Field Name="txtJMBG" Hidden="true" />
+      <Field Name="txtOib" Hidden="true" />
+      <Field Name="txtPrezime" Hidden="true" />
+      <Field Name="txtTelefon" Hidden="true" />
+      <Field Name="txtUlica" Hidden="true" />
+      <Field Name="txtUnioKorisnik" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>8IEAAAACAKIJkBFACBCIAAADAQJQADCAAEAABAAAAAE=</HashCode>
+      <FileName>FrmUnosZapisaOsoba.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HGK.FrmUnosVrstePoslovnogSubjekta">
+    <Position X="12.5" Y="5.5" Width="4.25" />
+    <Members>
+      <Field Name="btnDodaj" Hidden="true" />
+      <Field Name="btnIzbrisi" Hidden="true" />
+      <Field Name="btnIzmijeni" Hidden="true" />
+      <Field Name="button1" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dgvVrstaPoslovnogSubjekta" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="txtNazivVrstePoslovnogSubjekta" Hidden="true" />
+      <Field Name="txtOznaka" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACKAAgBAIAACAAQICAABIABAAAEBEgAAAAAE=</HashCode>
+      <FileName>FrmUnosVrstePoslovnogSubjekta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HGK.FrmUnosStrucneSpreme">
+    <Position X="17" Y="5.5" Width="3.75" />
+    <Members>
+      <Field Name="btnIzbrisi" Hidden="true" />
+      <Field Name="btnIzmijeni" Hidden="true" />
+      <Field Name="btnOdustani" Hidden="true" />
+      <Field Name="btnUnesi" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dgvStrucneSpreme" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="txtNazivStrucneSpreme" Hidden="true" />
+      <Field Name="txtOznakaStrucneSpreme" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQCAJgBAAAACAABIDBAAAABAAAABQAACEAAE=</HashCode>
+      <FileName>FrmUnosStrucneSpreme.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HGK.FrmUnosNaselja">
+    <Position X="22.25" Y="5.5" Width="2.75" />
+    <Members>
+      <Field Name="btnIzmijeni" Hidden="true" />
+      <Field Name="btnOdustani" Hidden="true" />
+      <Field Name="btnUnesi" Hidden="true" />
+      <Field Name="button1" Hidden="true" />
+      <Field Name="cmbZupanije" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dgvNaselja" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="label4" Hidden="true" />
+      <Field Name="txtMaticniBrojNaselja" Hidden="true" />
+      <Field Name="txtNazivNaselja" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQgAAAQAQCAZgFAEAACAAAACAAAIABAAIEAABACAAAA=</HashCode>
+      <FileName>FrmUnosNaselja.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HGK.FrmStatistika">
+    <Position X="25.5" Y="5.5" Width="3.5" />
+    <Members>
+      <Field Name="btnAgentiPoStruci" Hidden="true" />
+      <Field Name="btnAgentiPoZupanijama" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="rtbStatiAgentipoZupanija" Hidden="true" />
+      <Field Name="rtbStrukeAgenata" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="System.Windows.Forms.Form" FixedToPoint="true">
+      <Path>
+        <Point X="5.25" Y="4.441" />
+        <Point X="5.25" Y="5.125" />
+        <Point X="27.25" Y="5.125" />
+        <Point X="27.25" Y="5.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAACKAABACABCAAAgDQAACAAIQAAAAAAAAAgA=</HashCode>
+      <FileName>FrmStatistika.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HGK.FrmPoloziIspit">
+    <Position X="29.75" Y="5.5" Width="2.5" />
+    <Members>
+      <Field Name="btnIzmijeni" Hidden="true" />
+      <Field Name="btnOdustani" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="dtpPolozenIspit" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label13" Hidden="true" />
+      <Field Name="label14" Hidden="true" />
+      <Field Name="rtxtNapomena" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>gQAAAAAQADAJgAAAAACAAAACAAABEBAAAAAAAAAAAAA=</HashCode>
+      <FileName>FrmPoloziIspit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HGK.FrmIzmjeniVrstuPoslovnogSubjekta">
+    <Position X="29.5" Y="10" Width="3.5" />
+    <Members>
+      <Field Name="btnIzmijeni" Hidden="true" />
+      <Field Name="button1" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="txtNazivVrstePoslovnogSubjekta" Hidden="true" />
+      <Field Name="txtOznaka" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="System.Windows.Forms.Form" ManuallyRouted="true">
+      <Path>
+        <Point X="5.25" Y="4.441" />
+        <Point X="5.25" Y="5.125" />
+        <Point X="29.434" Y="5.125" />
+        <Point X="29.434" Y="9.625" />
+        <Point X="31.25" Y="9.625" />
+        <Point X="31.25" Y="10" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAADAAgBAIAACAAQASAAAIABAAAAAAAAAAAAA=</HashCode>
+      <FileName>FrmIzmjeniVrstuPoslovnogSubjekta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HGK.FrmIzmijeniZaposlenika">
+    <Position X="0.5" Y="9.75" Width="3" />
+    <Members>
+      <Field Name="btnIzmijeni" Hidden="true" />
+      <Field Name="btnOdaberi" Hidden="true" />
+      <Field Name="btnOdustani" Hidden="true" />
+      <Field Name="button1" Hidden="true" />
+      <Field Name="cmbTipKorisnika" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="datumRodjenjaUnos" Hidden="true" />
+      <Field Name="dgvZaposlenici" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="label4" Hidden="true" />
+      <Field Name="label5" Hidden="true" />
+      <Field Name="label6" Hidden="true" />
+      <Field Name="label7" Hidden="true" />
+      <Field Name="txtIme" Hidden="true" />
+      <Field Name="txtKorisnickoIme" Hidden="true" />
+      <Field Name="txtLozinka" Hidden="true" />
+      <Field Name="txtPrezime" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAEAAoQBCGApgBAAAACAgAICoAQYABAAAEAAAAAAAEA=</HashCode>
+      <FileName>FrmIzmijeniZaposlenika.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HGK.FrmIzmijeniZapisUnosaOsobe">
+    <Position X="3.75" Y="9.75" Width="3.5" />
+    <Members>
+      <Field Name="btnIzmijeni" Hidden="true" />
+      <Field Name="btnOdustani" Hidden="true" />
+      <Field Name="cmbNaselje" Hidden="true" />
+      <Field Name="cmbStrucnaSprema" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="dtpDatumRodenja" Hidden="true" />
+      <Field Name="dtpDatumUnosa" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label10" Hidden="true" />
+      <Field Name="label11" Hidden="true" />
+      <Field Name="label12" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="label4" Hidden="true" />
+      <Field Name="label5" Hidden="true" />
+      <Field Name="label6" Hidden="true" />
+      <Field Name="label7" Hidden="true" />
+      <Field Name="label8" Hidden="true" />
+      <Field Name="label9" Hidden="true" />
+      <Field Name="txtIEmail" Hidden="true" />
+      <Field Name="txtIme" Hidden="true" />
+      <Field Name="txtJMBG" Hidden="true" />
+      <Field Name="txtOib" Hidden="true" />
+      <Field Name="txtPrezime" Hidden="true" />
+      <Field Name="txtTelefon" Hidden="true" />
+      <Field Name="txtUlica" Hidden="true" />
+      <Field Name="txtUnioKorisnik" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>8IEAAAACAKIJkBFAABCAAAADAAAQADCEIEAABAAAAAA=</HashCode>
+      <FileName>FrmIzmijeniZapisUnosaOsobe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HGK.FrmIzmijeniStrucnuSpremu">
+    <Position X="7.5" Y="9.75" Width="3" />
+    <Members>
+      <Field Name="btnOdustani" Hidden="true" />
+      <Field Name="btnSpremi" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dgvStrucneSpreme" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="txtNazivStrucneSpreme" Hidden="true" />
+      <Field Name="txtOznakaStrucneSpreme" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIACAJABAAAQCAABgiBAAAAAAAAAAQAAAAAAE=</HashCode>
+      <FileName>FrmIzmijeniStrucnuSpremu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HGK.FrmIzmijenaPoslovnogSubjekta">
+    <Position X="14" Y="9.75" Width="4.25" />
+    <Members>
+      <Field Name="btnIzmijeni" Hidden="true" />
+      <Field Name="btnOdustani" Hidden="true" />
+      <Field Name="cmbNaselja" Hidden="true" />
+      <Field Name="cmbVrstaPoslovni" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="dtpDatumUnosa" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="label4" Hidden="true" />
+      <Field Name="label5" Hidden="true" />
+      <Field Name="label6" Hidden="true" />
+      <Field Name="label7" Hidden="true" />
+      <Field Name="label8" Hidden="true" />
+      <Field Name="txtEmail" Hidden="true" />
+      <Field Name="txtMaticniBroj" Hidden="true" />
+      <Field Name="txtNaziv" Hidden="true" />
+      <Field Name="txtOib" Hidden="true" />
+      <Field Name="txtTelefon" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>kAAAAAAAACcJgRBACBCACAACAAAAAJAIAAAABAAAAAA=</HashCode>
+      <FileName>FrmIzmijenaPoslovnogSubjekta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HGK.FrmDodjeliAgentaSubjektu">
+    <Position X="18.5" Y="9.75" Width="3.75" />
+    <Members>
+      <Field Name="btnDodaj" Hidden="true" />
+      <Field Name="btnIzmijeniUgovor" Hidden="true" />
+      <Field Name="btnOdustani" Hidden="true" />
+      <Field Name="cmbOsoba" Hidden="true" />
+      <Field Name="cmbPoslovniSubjekt" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dgvUgovori" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="dtpUnosa" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="label4" Hidden="true" />
+      <Field Name="label5" Hidden="true" />
+      <Field Name="txtRegistarskiBroj" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ABAAIAAgQKIJQBgCAACgAAACAABAIAAgAAAAAAAAAAE=</HashCode>
+      <FileName>FrmDodjeliAgentaSubjektu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HGK.FrmDodajZaposlenika">
+    <Position X="22.5" Y="9.75" Width="2.75" />
+    <Members>
+      <Field Name="brnDodaj" Hidden="true" />
+      <Field Name="btnClose" Hidden="true" />
+      <Field Name="button1" Hidden="true" />
+      <Field Name="cmbTipKorisnika" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="datumRodjenjaUnos" Hidden="true" />
+      <Field Name="dgvZaposlenici" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="label4" Hidden="true" />
+      <Field Name="label5" Hidden="true" />
+      <Field Name="label6" Hidden="true" />
+      <Field Name="label7" Hidden="true" />
+      <Field Name="txtIme" Hidden="true" />
+      <Field Name="txtKorisnickoIme" Hidden="true" />
+      <Field Name="txtLozinka" Hidden="true" />
+      <Field Name="txtPrezime" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="System.Windows.Forms.Form" ManuallyRouted="true">
+      <Path>
+        <Point X="5.25" Y="4.441" />
+        <Point X="5.25" Y="5.125" />
+        <Point X="5.428" Y="5.125" />
+        <Point X="5.428" Y="9.382" />
+        <Point X="23.875" Y="9.382" />
+        <Point X="23.875" Y="9.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAkAAoQAACAgABAAAACAAAICoAQYQAAAAMAAAACAAAA=</HashCode>
+      <FileName>FrmDodajZaposlenika.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HGK.FrmDeaktivirajUgovor">
+    <Position X="25.5" Y="9.75" Width="3.75" />
+    <Members>
+      <Field Name="btnDeaktiviraj" Hidden="true" />
+      <Field Name="btnFilterAgent" Hidden="true" />
+      <Field Name="btnFilterBrojUgovora" Hidden="true" />
+      <Field Name="btnFilterSubjekt" Hidden="true" />
+      <Field Name="btnOdustani" Hidden="true" />
+      <Field Name="btnVrati" Hidden="true" />
+      <Field Name="cmbFilterAgent" Hidden="true" />
+      <Field Name="cmbFilterBrUgovor" Hidden="true" />
+      <Field Name="cmbFilterSubjekt" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dgvUgovori" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="dtpRaskidaUgovora" Hidden="true" />
+      <Field Name="groupBox1" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgAEAQRAACoNQDAACACAAAEKCAAAAAQggCC1BAAAAAA=</HashCode>
+      <FileName>FrmDeaktivirajUgovor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HGK.FrmIzmijeniNaselje">
+    <Position X="10.75" Y="9.75" Width="3" />
+    <Members>
+      <Field Name="btnIzmijeni" Hidden="true" />
+      <Field Name="btnOdustani" Hidden="true" />
+      <Field Name="cmbZupanije" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="txtMaticniBrojNaselja" Hidden="true" />
+      <Field Name="txtNazivNaselja" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="System.Windows.Forms.Form" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="5.25" Y="4.441" />
+        <Point X="5.25" Y="9.375" />
+        <Point X="12.25" Y="9.375" />
+        <Point X="12.25" Y="9.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAACAZgBAEAACAAAACBAAAABAAIAAAAgAAAAA=</HashCode>
+      <FileName>FrmIzmijeniNaselje.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,118 @@
+C:\Users\ssk\source\repos\HGK\bin\Debug\HGK.exe.config
+C:\Users\ssk\source\repos\HGK\bin\Debug\HGK.exe
+C:\Users\ssk\source\repos\HGK\bin\Debug\HGK.pdb
+C:\Users\ssk\source\repos\HGK\bin\Debug\EntityFramework.dll
+C:\Users\ssk\source\repos\HGK\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ssk\source\repos\HGK\bin\Debug\EntityFramework.xml
+C:\Users\ssk\source\repos\HGK\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ssk\source\repos\HGK\obj\Debug\HGK.csprojAssemblyReference.cache
+C:\Users\ssk\source\repos\HGK\obj\Debug\HGK.Login.resources
+C:\Users\ssk\source\repos\HGK\obj\Debug\HGK.Properties.Resources.resources
+C:\Users\ssk\source\repos\HGK\obj\Debug\HGK.csproj.GenerateResource.cache
+C:\Users\ssk\source\repos\HGK\obj\Debug\HGK.csproj.CoreCompileInputs.cache
+C:\Users\ssk\source\repos\HGK\obj\Debug\HGK.csproj.CopyComplete
+C:\Users\ssk\source\repos\HGK\obj\Debug\HGK.exe
+C:\Users\ssk\source\repos\HGK\obj\Debug\HGK.pdb
+C:\Users\ssk\source\repos\HGK\obj\Debug\HGK.GlavniIzbornik.resources
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\bin\Debug\HGK.exe.config
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\bin\Debug\HGK.exe
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\bin\Debug\HGK.pdb
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\bin\Debug\EntityFramework.dll
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\bin\Debug\EntityFramework.xml
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\obj\Debug\HGK.csprojAssemblyReference.cache
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\obj\Debug\HGK.GlavniIzbornik.resources
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\obj\Debug\HGK.Login.resources
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\obj\Debug\HGK.Properties.Resources.resources
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\obj\Debug\HGK.csproj.GenerateResource.cache
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\obj\Debug\HGK.csproj.CoreCompileInputs.cache
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\obj\Debug\HGK.csproj.CopyComplete
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\obj\Debug\HGK.exe
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\obj\Debug\HGK.pdb
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\obj\Debug\HGK.FrmDodajZaposlenika.resources
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\obj\Debug\HGK.FrmIzmijeniZaposlenika.resources
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\obj\Debug\HGK.FrmUnosVrstePoslovnogSubjekta.resources
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\obj\Debug\HGK.FrmIzmjeniVrstuPoslovnogSubjekta.resources
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\obj\Debug\HGK.FrmUnosStrucneSpreme.resources
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\obj\Debug\HGK.FrmIzmijeniStrucnuSpremu.resources
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\obj\Debug\HGK.FrmUnosZupanija.resources
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\obj\Debug\HGK.FrmUnosNaselja.resources
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\obj\Debug\HGK.FrmIzmijeniNaselje.resources
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\obj\Debug\HGK.FrmUnosZapisaOsoba.resources
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\obj\Debug\HGK.FrmIzmijeniZapisUnosaOsobe.resources
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\obj\Debug\HGK.FrmZapisPoslovnogSubjekta.resources
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\obj\Debug\HGK.FrmIzmijenaPoslovnogSubjekta.resources
+C:\Users\ssk\Desktop\PI 2020\PI projekt 2020 DDDDdora\hGK\HGK\obj\Debug\HGK.FrmDodjeliAgentaSubjektu.resources
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\bin\Debug\HGK.exe.config
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\bin\Debug\HGK.exe
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\bin\Debug\HGK.pdb
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\bin\Debug\EntityFramework.dll
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\bin\Debug\EntityFramework.xml
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\obj\Debug\HGK.csprojAssemblyReference.cache
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\obj\Debug\HGK.FrmDodajZaposlenika.resources
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\obj\Debug\HGK.FrmDodjeliAgentaSubjektu.resources
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\obj\Debug\HGK.FrmIzmijenaPoslovnogSubjekta.resources
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\obj\Debug\HGK.FrmIzmijeniNaselje.resources
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\obj\Debug\HGK.FrmIzmijeniStrucnuSpremu.resources
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\obj\Debug\HGK.FrmIzmijeniZapisUnosaOsobe.resources
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\obj\Debug\HGK.FrmIzmijeniZaposlenika.resources
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\obj\Debug\HGK.FrmIzmjeniVrstuPoslovnogSubjekta.resources
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\obj\Debug\HGK.FrmUnosNaselja.resources
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\obj\Debug\HGK.FrmUnosStrucneSpreme.resources
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\obj\Debug\HGK.FrmUnosVrstePoslovnogSubjekta.resources
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\obj\Debug\HGK.FrmUnosZapisaOsoba.resources
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\obj\Debug\HGK.FrmUnosZupanija.resources
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\obj\Debug\HGK.FrmZapisPoslovnogSubjekta.resources
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\obj\Debug\HGK.GlavniIzbornik.resources
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\obj\Debug\HGK.Login.resources
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\obj\Debug\HGK.Properties.Resources.resources
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\obj\Debug\HGK.csproj.GenerateResource.cache
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\obj\Debug\HGK.csproj.CoreCompileInputs.cache
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\obj\Debug\HGK.csproj.CopyComplete
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\obj\Debug\HGK.exe
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\obj\Debug\HGK.pdb
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\obj\Debug\HGK.FrmDeaktivirajUgovor.resources
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\obj\Debug\HGK.FrmPoloziIspit.resources
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\bin\Debug\Statistika.dll
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\bin\Debug\Statistika.pdb
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\obj\Debug\HGK.FrmStatistika.resources
+C:\Users\ssk\Desktop\PI 2020\HGK git\HGK\HGK\bin\Debug\Statistika.dll.config
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\bin\Debug\HGK.exe.config
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\bin\Debug\HGK.exe
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\bin\Debug\HGK.pdb
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\bin\Debug\EntityFramework.dll
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\bin\Debug\Statistika.dll
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\bin\Debug\Statistika.pdb
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\bin\Debug\Statistika.dll.config
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\bin\Debug\EntityFramework.xml
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\obj\Debug\HGK.csprojAssemblyReference.cache
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\obj\Debug\HGK.FrmDeaktivirajUgovor.resources
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\obj\Debug\HGK.FrmDodajZaposlenika.resources
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\obj\Debug\HGK.FrmDodjeliAgentaSubjektu.resources
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\obj\Debug\HGK.FrmIzmijenaPoslovnogSubjekta.resources
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\obj\Debug\HGK.FrmIzmijeniNaselje.resources
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\obj\Debug\HGK.FrmIzmijeniStrucnuSpremu.resources
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\obj\Debug\HGK.FrmIzmijeniZapisUnosaOsobe.resources
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\obj\Debug\HGK.FrmIzmijeniZaposlenika.resources
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\obj\Debug\HGK.FrmIzmjeniVrstuPoslovnogSubjekta.resources
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\obj\Debug\HGK.FrmPoloziIspit.resources
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\obj\Debug\HGK.FrmStatistika.resources
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\obj\Debug\HGK.FrmUnosNaselja.resources
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\obj\Debug\HGK.FrmUnosStrucneSpreme.resources
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\obj\Debug\HGK.FrmUnosVrstePoslovnogSubjekta.resources
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\obj\Debug\HGK.FrmUnosZapisaOsoba.resources
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\obj\Debug\HGK.FrmUnosZupanija.resources
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\obj\Debug\HGK.FrmZapisPoslovnogSubjekta.resources
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\obj\Debug\HGK.GlavniIzbornik.resources
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\obj\Debug\HGK.Login.resources
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\obj\Debug\HGK.Properties.Resources.resources
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\obj\Debug\HGK.csproj.GenerateResource.cache
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\obj\Debug\HGK.csproj.CoreCompileInputs.cache
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\obj\Debug\HGK.csproj.CopyComplete
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\obj\Debug\HGK.exe
+C:\Users\ssk\Desktop\Github HGK\HGK\HGK\obj\Debug\HGK.pdb

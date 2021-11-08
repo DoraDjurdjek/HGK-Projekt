@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="06457d681aa347b694d17535995fdc09" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="PI20_037_DBModel.Agent_posrednika_table" Width="1.5" PointX="2.625" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_037_DBModel.Korisnik_table" Width="1.5" PointX="3.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_037_DBModel.Naselje_table" Width="1.5" PointX="3.75" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_037_DBModel.Strucna_sprema_table" Width="1.5" PointX="3.75" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_037_DBModel.Tip_korisnika_table" Width="1.5" PointX="1.5" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_037_DBModel.Vrsta_poslovnog_subjekta_table" Width="1.5" PointX="3.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_037_DBModel.Zapis_osobe_table" Width="1.5" PointX="6" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_037_DBModel.Zapis_poslovnog_subjekta_table" Width="1.5" PointX="7.5" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PI20_037_DBModel.Zupanija_table" Width="1.5" PointX="1.5" PointY="13.5" IsExpanded="true" />
+        <AssociationConnector Association="PI20_037_DBModel.fk_korisniktable_tip_korisnika" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_037_DBModel.fk_zapis_osobe_table_korisnik" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_037_DBModel.fk_naseljetable_zupanija" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_037_DBModel.fk_zapis_osobe_table_naselje" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_037_DBModel.fk_zapis_poslovnog_subjekta_table_naselje" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_037_DBModel.fk_zapis_osobe_table_strucna_sprema" ManuallyRouted="false" />
+        <AssociationConnector Association="PI20_037_DBModel.fk_zapis_poslovnog_subjekta_table_vrsta_poslovnog_subjekta" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="PI20_037_DBModel.Agent_table2" Width="1.5" PointX="10.5" PointY="5.625" />
+        <AssociationConnector Association="PI20_037_DBModel.fk_zapis_osobe_agent_table2" />
+        <AssociationConnector Association="PI20_037_DBModel.fk_agent_posrednika_asgent_table2" />
+        <AssociationConnector Association="PI20_037_DBModel.fk_agent_posrednika_zapis_poslovnog_subjekta" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PI20_037_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Agent">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="registarskibroj" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="datumupisa" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="datumbrisanja" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="datumpolaganjaispita" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="napomena" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Agent_posrednika" Relationship="Self.fk_agent_posrednika_agent1" FromRole="Agent" ToRole="Agent_posrednika" />
+    <NavigationProperty Name="Zapis_osobe" Relationship="Self.fk_zapis_osobe_agenti1" FromRole="Agent" ToRole="Zapis_osobe" />
+  </EntityType>
+  <EntityType Name="Agent_posrednika">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="datumunosa" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="agent_id" Type="Int32" Nullable="false" />
+    <Property Name="posrednik_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Agent" Relationship="Self.fk_agent_posrednika_agent1" FromRole="Agent_posrednika" ToRole="Agent" />
+    <NavigationProperty Name="Posrednik" Relationship="Self.fk_agent_posrednika_posrednik1" FromRole="Agent_posrednika" ToRole="Posrednik" />
+  </EntityType>
+  <EntityType Name="Korisnik">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ime" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="prezime" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="korime" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="datumrodj" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="lozinka" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="kriptiranalozinka" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="tip_korisnika_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Tip_korisnika" Relationship="Self.fk_korisnik_tip_korisnika" FromRole="Korisnik" ToRole="Tip_korisnika" />
+    <NavigationProperty Name="Zapis_osobe" Relationship="Self.fk_zapis_osobe_korisnik1" FromRole="Korisnik" ToRole="Zapis_osobe" />
+  </EntityType>
+  <EntityType Name="Naselje">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="naziv" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="matbroj" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="zupanija_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Zupanija" Relationship="Self.fk_naselje_zupanija1" FromRole="Naselje" ToRole="Zupanija" />
+    <NavigationProperty Name="Zapis_osobe" Relationship="Self.fk_zapis_osobe_naselje1" FromRole="Naselje" ToRole="Zapis_osobe" />
+    <NavigationProperty Name="Zapis_poslovnog_subjekta" Relationship="Self.fk_zapis_poslovnog_subjekta_naselje1" FromRole="Naselje" ToRole="Zapis_poslovnog_subjekta" />
+  </EntityType>
+  <EntityType Name="Posrednik">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="registarskibroj" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="datumupisa" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="Agent_posrednika" Relationship="Self.fk_agent_posrednika_posrednik1" FromRole="Posrednik" ToRole="Agent_posrednika" />
+    <NavigationProperty Name="Zapis_poslovnog_subjekta" Relationship="Self.fk_zapis_poslovnog" FromRole="Posrednik" ToRole="Zapis_poslovnog_subjekta" />
+  </EntityType>
+  <EntityType Name="Strucna_sprema">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="naziv" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="oznaka" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Zapis_osobe" Relationship="Self.fk_zaapis_osobe_strucna_sprema1" FromRole="Strucna_sprema" ToRole="Zapis_osobe" />
+  </EntityType>
+  <EntityType Name="Tip_korisnika">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="uloga" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="opis" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Korisnik" Relationship="Self.fk_korisnik_tip_korisnika" FromRole="Tip_korisnika" ToRole="Korisnik" />
+  </EntityType>
+  <EntityType Name="Vrsta_poslovnog_subjekta">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="naziv" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Zapis_poslovnog_subjekta" Relationship="Self.fk_zapis_poslovnog_subjekta_vrsta_poslovnog_subjekta1" FromRole="Vrsta_poslovnog_subjekta" ToRole="Zapis_poslovnog_subjekta" />
+  </EntityType>
+  <EntityType Name="Zapis_osobe">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="ime" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="prezime" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="datumrodj" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="ulica" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="jmbg" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="oib" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="telefon" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="datumunosa" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="korisnik_id" Type="Int32" Nullable="false" />
+    <Property Name="strucna_sprema_id" Type="Int32" Nullable="false" />
+    <Property Name="naselje_id" Type="Int32" Nullable="false" />
+    <Property Name="agent_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Agent" Relationship="Self.fk_zapis_osobe_agenti1" FromRole="Zapis_osobe" ToRole="Agent" />
+    <NavigationProperty Name="Korisnik" Relationship="Self.fk_zapis_osobe_korisnik1" FromRole="Zapis_osobe" ToRole="Korisnik" />
+    <NavigationProperty Name="Naselje" Relationship="Self.fk_zapis_osobe_naselje1" FromRole="Zapis_osobe" ToRole="Naselje" />
+    <NavigationProperty Name="Strucna_sprema" Relationship="Self.fk_zaapis_osobe_strucna_sprema1" FromRole="Zapis_osobe" ToRole="Strucna_sprema" />
+  </EntityType>
+  <EntityType Name="Zapis_poslovnog_subjekta">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="matbroj" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="naziv" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="telefon" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="datumunosa" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="oib" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="posrednik_id" Type="Int32" Nullable="false" />
+    <Property Name="naselje_id" Type="Int32" Nullable="false" />
+    <Property Name="vrsta_poslovnog_subjekta_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Naselje" Relationship="Self.fk_zapis_poslovnog_subjekta_naselje1" FromRole="Zapis_poslovnog_subjekta" ToRole="Naselje" />
+    <NavigationProperty Name="Posrednik" Relationship="Self.fk_zapis_poslovnog" FromRole="Zapis_poslovnog_subjekta" ToRole="Posrednik" />
+    <NavigationProperty Name="Vrsta_poslovnog_subjekta" Relationship="Self.fk_zapis_poslovnog_subjekta_vrsta_poslovnog_subjekta1" FromRole="Zapis_poslovnog_subjekta" ToRole="Vrsta_poslovnog_subjekta" />
+  </EntityType>
+  <EntityType Name="Zupanija">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="naziv" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Naselje" Relationship="Self.fk_naselje_zupanija1" FromRole="Zupanija" ToRole="Naselje" />
+  </EntityType>
+  <Association Name="fk_agent_posrednika_agent1">
+    <End Role="Agent" Type="Self.Agent" Multiplicity="1" />
+    <End Role="Agent_posrednika" Type="Self.Agent_posrednika" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agent">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Agent_posrednika">
+        <PropertyRef Name="agent_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_zapis_osobe_agenti1">
+    <End Role="Agent" Type="Self.Agent" Multiplicity="1" />
+    <End Role="Zapis_osobe" Type="Self.Zapis_osobe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agent">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Zapis_osobe">
+        <PropertyRef Name="agent_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_agent_posrednika_posrednik1">
+    <End Role="Posrednik" Type="Self.Posrednik" Multiplicity="1" />
+    <End Role="Agent_posrednika" Type="Self.Agent_posrednika" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Posrednik">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Agent_posrednika">
+        <PropertyRef Name="posrednik_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_korisnik_tip_korisnika">
+    <End Role="Tip_korisnika" Type="Self.Tip_korisnika" Multiplicity="1" />
+    <End Role="Korisnik" Type="Self.Korisnik" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tip_korisnika">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Korisnik">
+        <PropertyRef Name="tip_korisnika_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_zapis_osobe_korisnik1">
+    <End Role="Korisnik" Type="Self.Korisnik" Multiplicity="1" />
+    <End Role="Zapis_osobe" Type="Self.Zapis_osobe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Korisnik">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Zapis_osobe">
+        <PropertyRef Name="korisnik_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_naselje_zupanija1">
+    <End Role="Zupanija" Type="Self.Zupanija" Multiplicity="1" />
+    <End Role="Naselje" Type="Self.Naselje" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Zupanija">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Naselje">
+        <PropertyRef Name="zupanija_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_zapis_osobe_naselje1">
+    <End Role="Naselje" Type="Self.Naselje" Multiplicity="1" />
+    <End Role="Zapis_osobe" Type="Self.Zapis_osobe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Naselje">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Zapis_osobe">
+        <PropertyRef Name="naselje_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_zapis_poslovnog_subjekta_naselje1">
+    <End Role="Naselje" Type="Self.Naselje" Multiplicity="1" />
+    <End Role="Zapis_poslovnog_subjekta" Type="Self.Zapis_poslovnog_subjekta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Naselje">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Zapis_poslovnog_subjekta">
+        <PropertyRef Name="naselje_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_zapis_poslovnog">
+    <End Role="Posrednik" Type="Self.Posrednik" Multiplicity="1" />
+    <End Role="Zapis_poslovnog_subjekta" Type="Self.Zapis_poslovnog_subjekta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Posrednik">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Zapis_poslovnog_subjekta">
+        <PropertyRef Name="posrednik_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_zaapis_osobe_strucna_sprema1">
+    <End Role="Strucna_sprema" Type="Self.Strucna_sprema" Multiplicity="1" />
+    <End Role="Zapis_osobe" Type="Self.Zapis_osobe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Strucna_sprema">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Zapis_osobe">
+        <PropertyRef Name="strucna_sprema_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_zapis_poslovnog_subjekta_vrsta_poslovnog_subjekta1">
+    <End Role="Vrsta_poslovnog_subjekta" Type="Self.Vrsta_poslovnog_subjekta" Multiplicity="1" />
+    <End Role="Zapis_poslovnog_subjekta" Type="Self.Zapis_poslovnog_subjekta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vrsta_poslovnog_subjekta">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Zapis_poslovnog_subjekta">
+        <PropertyRef Name="vrsta_poslovnog_subjekta_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PI20_037_DBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Agent" EntityType="Self.Agent" />
+    <EntitySet Name="Agent_posrednika" EntityType="Self.Agent_posrednika" />
+    <EntitySet Name="Korisnik" EntityType="Self.Korisnik" />
+    <EntitySet Name="Naselje" EntityType="Self.Naselje" />
+    <EntitySet Name="Posrednik" EntityType="Self.Posrednik" />
+    <EntitySet Name="Strucna_sprema" EntityType="Self.Strucna_sprema" />
+    <EntitySet Name="Tip_korisnika" EntityType="Self.Tip_korisnika" />
+    <EntitySet Name="Vrsta_poslovnog_subjekta" EntityType="Self.Vrsta_poslovnog_subjekta" />
+    <EntitySet Name="Zapis_osobe" EntityType="Self.Zapis_osobe" />
+    <EntitySet Name="Zapis_poslovnog_subjekta" EntityType="Self.Zapis_poslovnog_subjekta" />
+    <EntitySet Name="Zupanija" EntityType="Self.Zupanija" />
+    <AssociationSet Name="fk_agent_posrednika_agent1" Association="Self.fk_agent_posrednika_agent1">
+      <End Role="Agent" EntitySet="Agent" />
+      <End Role="Agent_posrednika" EntitySet="Agent_posrednika" />
+    </AssociationSet>
+    <AssociationSet Name="fk_zapis_osobe_agenti1" Association="Self.fk_zapis_osobe_agenti1">
+      <End Role="Agent" EntitySet="Agent" />
+      <End Role="Zapis_osobe" EntitySet="Zapis_osobe" />
+    </AssociationSet>
+    <AssociationSet Name="fk_agent_posrednika_posrednik1" Association="Self.fk_agent_posrednika_posrednik1">
+      <End Role="Posrednik" EntitySet="Posrednik" />
+      <End Role="Agent_posrednika" EntitySet="Agent_posrednika" />
+    </AssociationSet>
+    <AssociationSet Name="fk_korisnik_tip_korisnika" Association="Self.fk_korisnik_tip_korisnika">
+      <End Role="Tip_korisnika" EntitySet="Tip_korisnika" />
+      <End Role="Korisnik" EntitySet="Korisnik" />
+    </AssociationSet>
+    <AssociationSet Name="fk_zapis_osobe_korisnik1" Association="Self.fk_zapis_osobe_korisnik1">
+      <End Role="Korisnik" EntitySet="Korisnik" />
+      <End Role="Zapis_osobe" EntitySet="Zapis_osobe" />
+    </AssociationSet>
+    <AssociationSet Name="fk_naselje_zupanija1" Association="Self.fk_naselje_zupanija1">
+      <End Role="Zupanija" EntitySet="Zupanija" />
+      <End Role="Naselje" EntitySet="Naselje" />
+    </AssociationSet>
+    <AssociationSet Name="fk_zapis_osobe_naselje1" Association="Self.fk_zapis_osobe_naselje1">
+      <End Role="Naselje" EntitySet="Naselje" />
+      <End Role="Zapis_osobe" EntitySet="Zapis_osobe" />
+    </AssociationSet>
+    <AssociationSet Name="fk_zapis_poslovnog_subjekta_naselje1" Association="Self.fk_zapis_poslovnog_subjekta_naselje1">
+      <End Role="Naselje" EntitySet="Naselje" />
+      <End Role="Zapis_poslovnog_subjekta" EntitySet="Zapis_poslovnog_subjekta" />
+    </AssociationSet>
+    <AssociationSet Name="fk_zapis_poslovnog" Association="Self.fk_zapis_poslovnog">
+      <End Role="Posrednik" EntitySet="Posrednik" />
+      <End Role="Zapis_poslovnog_subjekta" EntitySet="Zapis_poslovnog_subjekta" />
+    </AssociationSet>
+    <AssociationSet Name="fk_zaapis_osobe_strucna_sprema1" Association="Self.fk_zaapis_osobe_strucna_sprema1">
+      <End Role="Strucna_sprema" EntitySet="Strucna_sprema" />
+      <End Role="Zapis_osobe" EntitySet="Zapis_osobe" />
+    </AssociationSet>
+    <AssociationSet Name="fk_zapis_poslovnog_subjekta_vrsta_poslovnog_subjekta1" Association="Self.fk_zapis_poslovnog_subjekta_vrsta_poslovnog_subjekta1">
+      <End Role="Vrsta_poslovnog_subjekta" EntitySet="Vrsta_poslovnog_subjekta" />
+      <End Role="Zapis_poslovnog_subjekta" EntitySet="Zapis_poslovnog_subjekta" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

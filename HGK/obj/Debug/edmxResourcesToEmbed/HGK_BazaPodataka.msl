@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PI20_037_DBModelStoreContainer" CdmEntityContainer="PI20_037_DBEntities">
+    <EntitySetMapping Name="Agent">
+      <EntityTypeMapping TypeName="PI20_037_DBModel.Agent">
+        <MappingFragment StoreEntitySet="Agent">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="registarskibroj" ColumnName="registarskibroj" />
+          <ScalarProperty Name="datumupisa" ColumnName="datumupisa" />
+          <ScalarProperty Name="datumbrisanja" ColumnName="datumbrisanja" />
+          <ScalarProperty Name="datumpolaganjaispita" ColumnName="datumpolaganjaispita" />
+          <ScalarProperty Name="napomena" ColumnName="napomena" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Agent_posrednika">
+      <EntityTypeMapping TypeName="PI20_037_DBModel.Agent_posrednika">
+        <MappingFragment StoreEntitySet="Agent_posrednika">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="datumunosa" ColumnName="datumunosa" />
+          <ScalarProperty Name="agent_id" ColumnName="agent_id" />
+          <ScalarProperty Name="posrednik_id" ColumnName="posrednik_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Korisnik">
+      <EntityTypeMapping TypeName="PI20_037_DBModel.Korisnik">
+        <MappingFragment StoreEntitySet="Korisnik">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ime" ColumnName="ime" />
+          <ScalarProperty Name="prezime" ColumnName="prezime" />
+          <ScalarProperty Name="korime" ColumnName="korime" />
+          <ScalarProperty Name="datumrodj" ColumnName="datumrodj" />
+          <ScalarProperty Name="lozinka" ColumnName="lozinka" />
+          <ScalarProperty Name="kriptiranalozinka" ColumnName="kriptiranalozinka" />
+          <ScalarProperty Name="tip_korisnika_id" ColumnName="tip_korisnika_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Naselje">
+      <EntityTypeMapping TypeName="PI20_037_DBModel.Naselje">
+        <MappingFragment StoreEntitySet="Naselje">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="naziv" ColumnName="naziv" />
+          <ScalarProperty Name="matbroj" ColumnName="matbroj" />
+          <ScalarProperty Name="zupanija_id" ColumnName="zupanija_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Posrednik">
+      <EntityTypeMapping TypeName="PI20_037_DBModel.Posrednik">
+        <MappingFragment StoreEntitySet="Posrednik">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="registarskibroj" ColumnName="registarskibroj" />
+          <ScalarProperty Name="datumupisa" ColumnName="datumupisa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Strucna_sprema">
+      <EntityTypeMapping TypeName="PI20_037_DBModel.Strucna_sprema">
+        <MappingFragment StoreEntitySet="Strucna_sprema">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="naziv" ColumnName="naziv" />
+          <ScalarProperty Name="oznaka" ColumnName="oznaka" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tip_korisnika">
+      <EntityTypeMapping TypeName="PI20_037_DBModel.Tip_korisnika">
+        <MappingFragment StoreEntitySet="Tip_korisnika">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="uloga" ColumnName="uloga" />
+          <ScalarProperty Name="opis" ColumnName="opis" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vrsta_poslovnog_subjekta">
+      <EntityTypeMapping TypeName="PI20_037_DBModel.Vrsta_poslovnog_subjekta">
+        <MappingFragment StoreEntitySet="Vrsta_poslovnog_subjekta">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="naziv" ColumnName="naziv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Zapis_osobe">
+      <EntityTypeMapping TypeName="PI20_037_DBModel.Zapis_osobe">
+        <MappingFragment StoreEntitySet="Zapis_osobe">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ime" ColumnName="ime" />
+          <ScalarProperty Name="prezime" ColumnName="prezime" />
+          <ScalarProperty Name="datumrodj" ColumnName="datumrodj" />
+          <ScalarProperty Name="ulica" ColumnName="ulica" />
+          <ScalarProperty Name="jmbg" ColumnName="jmbg" />
+          <ScalarProperty Name="oib" ColumnName="oib" />
+          <ScalarProperty Name="telefon" ColumnName="telefon" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="datumunosa" ColumnName="datumunosa" />
+          <ScalarProperty Name="korisnik_id" ColumnName="korisnik_id" />
+          <ScalarProperty Name="strucna_sprema_id" ColumnName="strucna_sprema_id" />
+          <ScalarProperty Name="naselje_id" ColumnName="naselje_id" />
+          <ScalarProperty Name="agent_id" ColumnName="agent_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Zapis_poslovnog_subjekta">
+      <EntityTypeMapping TypeName="PI20_037_DBModel.Zapis_poslovnog_subjekta">
+        <MappingFragment StoreEntitySet="Zapis_poslovnog_subjekta">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="matbroj" ColumnName="matbroj" />
+          <ScalarProperty Name="naziv" ColumnName="naziv" />
+          <ScalarProperty Name="telefon" ColumnName="telefon" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="datumunosa" ColumnName="datumunosa" />
+          <ScalarProperty Name="oib" ColumnName="oib" />
+          <ScalarProperty Name="posrednik_id" ColumnName="posrednik_id" />
+          <ScalarProperty Name="naselje_id" ColumnName="naselje_id" />
+          <ScalarProperty Name="vrsta_poslovnog_subjekta_id" ColumnName="vrsta_poslovnog_subjekta_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Zupanija">
+      <EntityTypeMapping TypeName="PI20_037_DBModel.Zupanija">
+        <MappingFragment StoreEntitySet="Zupanija">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="naziv" ColumnName="naziv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

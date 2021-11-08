@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7F9BFFB1-F580-4198-9073-760DF4B1D210}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HGK</RootNamespace>
+    <AssemblyName>HGK</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agent_posrednika_table.cs">
+      <DependentUpon>HGK_Baza_podataka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Agent_table2.cs">
+      <DependentUpon>HGK_Baza_podataka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDeaktivirajUgovor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDeaktivirajUgovor.Designer.cs">
+      <DependentUpon>FrmDeaktivirajUgovor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDodajZaposlenika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDodajZaposlenika.Designer.cs">
+      <DependentUpon>FrmDodajZaposlenika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDodjeliAgentaSubjektu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDodjeliAgentaSubjektu.Designer.cs">
+      <DependentUpon>FrmDodjeliAgentaSubjektu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIzmijenaPoslovnogSubjekta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIzmijenaPoslovnogSubjekta.Designer.cs">
+      <DependentUpon>FrmIzmijenaPoslovnogSubjekta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIzmijeniNaselje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIzmijeniNaselje.Designer.cs">
+      <DependentUpon>FrmIzmijeniNaselje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIzmijeniStrucnuSpremu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIzmijeniStrucnuSpremu.Designer.cs">
+      <DependentUpon>FrmIzmijeniStrucnuSpremu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIzmijeniZapisUnosaOsobe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIzmijeniZapisUnosaOsobe.Designer.cs">
+      <DependentUpon>FrmIzmijeniZapisUnosaOsobe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIzmijeniZaposlenika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIzmijeniZaposlenika.Designer.cs">
+      <DependentUpon>FrmIzmijeniZaposlenika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIzmjeniVrstuPoslovnogSubjekta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIzmjeniVrstuPoslovnogSubjekta.Designer.cs">
+      <DependentUpon>FrmIzmjeniVrstuPoslovnogSubjekta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPoloziIspit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPoloziIspit.Designer.cs">
+      <DependentUpon>FrmPoloziIspit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStatistika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStatistika.Designer.cs">
+      <DependentUpon>FrmStatistika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnosNaselja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnosNaselja.Designer.cs">
+      <DependentUpon>FrmUnosNaselja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnosStrucneSpreme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnosStrucneSpreme.Designer.cs">
+      <DependentUpon>FrmUnosStrucneSpreme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnosVrstePoslovnogSubjekta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnosVrstePoslovnogSubjekta.Designer.cs">
+      <DependentUpon>FrmUnosVrstePoslovnogSubjekta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnosZapisaOsoba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnosZapisaOsoba.Designer.cs">
+      <DependentUpon>FrmUnosZapisaOsoba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnosZupanija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnosZupanija.Designer.cs">
+      <DependentUpon>FrmUnosZupanija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmZapisPoslovnogSubjekta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmZapisPoslovnogSubjekta.Designer.cs">
+      <DependentUpon>FrmZapisPoslovnogSubjekta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlavniIzbornik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlavniIzbornik.Designer.cs">
+      <DependentUpon>GlavniIzbornik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HGK_Baza_podataka.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HGK_Baza_podataka.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HGK_Baza_podataka.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HGK_Baza_podataka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HGK_Baza_podataka.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HGK_Baza_podataka.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Korisnik_table.cs">
+      <DependentUpon>HGK_Baza_podataka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Naselje_table.code.cs" />
+    <Compile Include="Naselje_table.cs">
+      <DependentUpon>HGK_Baza_podataka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strucna_sprema_table.cs">
+      <DependentUpon>HGK_Baza_podataka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tip_korisnika_table.cs">
+      <DependentUpon>HGK_Baza_podataka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Vrsta_poslovnog_subjekta_table.cs">
+      <DependentUpon>HGK_Baza_podataka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Zapis_osobe_table.cs">
+      <DependentUpon>HGK_Baza_podataka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Zapis_poslovnog_subjekta_table.cs">
+      <DependentUpon>HGK_Baza_podataka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Zupanija_table.code.cs" />
+    <Compile Include="Zupanija_table.cs">
+      <DependentUpon>HGK_Baza_podataka.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmDeaktivirajUgovor.resx">
+      <DependentUpon>FrmDeaktivirajUgovor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDodajZaposlenika.resx">
+      <DependentUpon>FrmDodajZaposlenika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDodjeliAgentaSubjektu.resx">
+      <DependentUpon>FrmDodjeliAgentaSubjektu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIzmijenaPoslovnogSubjekta.resx">
+      <DependentUpon>FrmIzmijenaPoslovnogSubjekta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIzmijeniNaselje.resx">
+      <DependentUpon>FrmIzmijeniNaselje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIzmijeniStrucnuSpremu.resx">
+      <DependentUpon>FrmIzmijeniStrucnuSpremu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIzmijeniZapisUnosaOsobe.resx">
+      <DependentUpon>FrmIzmijeniZapisUnosaOsobe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIzmijeniZaposlenika.resx">
+      <DependentUpon>FrmIzmijeniZaposlenika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIzmjeniVrstuPoslovnogSubjekta.resx">
+      <DependentUpon>FrmIzmjeniVrstuPoslovnogSubjekta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPoloziIspit.resx">
+      <DependentUpon>FrmPoloziIspit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStatistika.resx">
+      <DependentUpon>FrmStatistika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnosNaselja.resx">
+      <DependentUpon>FrmUnosNaselja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnosStrucneSpreme.resx">
+      <DependentUpon>FrmUnosStrucneSpreme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnosVrstePoslovnogSubjekta.resx">
+      <DependentUpon>FrmUnosVrstePoslovnogSubjekta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnosZapisaOsoba.resx">
+      <DependentUpon>FrmUnosZapisaOsoba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnosZupanija.resx">
+      <DependentUpon>FrmUnosZupanija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmZapisPoslovnogSubjekta.resx">
+      <DependentUpon>FrmZapisPoslovnogSubjekta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlavniIzbornik.resx">
+      <DependentUpon>GlavniIzbornik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EntityDeploy Include="HGK_Baza_podataka.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>HGK_Baza_podataka.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DijagramKlasa.cd" />
+    <None Include="HGK_Baza_podataka.edmx.diagram">
+      <DependentUpon>HGK_Baza_podataka.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HGK_Baza_podataka.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HGK_Baza_podataka.edmx</DependentUpon>
+      <LastGenOutput>HGK_Baza_podataka.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="HGK_Baza_podataka.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HGK_Baza_podataka.edmx</DependentUpon>
+      <LastGenOutput>HGK_Baza_podataka.cs</LastGenOutput>
+    </Content>
+    <None Include="Resources\hgk1.jpg" />
+    <None Include="Resources\hgk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Statistika\Statistika.csproj">
+      <Project>{4b5e22b1-0547-4a02-be12-148b09c7c665}</Project>
+      <Name>Statistika</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
