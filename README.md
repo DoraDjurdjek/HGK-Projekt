@@ -3,7 +3,7 @@
 
 ## Projektni tim
 
-Ime i prezime | E-mail adresa (FOI) | Github korisničko ime
+Ime i prezime | E-mail adresa | Github korisničko ime
 ------------  | ------------------- |---------------------
 Dora Đurđek | dora.djurdjek@gmail.com | DoraDjurdjek
 
